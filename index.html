@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitter N' Ice Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header layout: Button    Logo    Socials (displayed vertically)-->
+    <header>
+        <a href="#inquiries"><p>Inquiries</p></a>
+        <h1>Glitter <span>'N'</span> Ice</h1>
+        <div class="contact">
+            <img src="assets/socials/facebook-seeklogo.svg" id="facebook-img">
+            <a href="facebook.com/glitternice" id="facebook-link" class="hidden-link">Facebook</a>
+            <img src="assets/socials/email-outline-svgrepo-com.svg" id="email-img">
+            <a href="mailto:alisondockree@yahoo.co.uk" id="email-link" class="hidden-link">alisondockree@yahoo.co.uk</a>
+        </div>
+    </header>
+
+
+    <div class="splash">
+        <h2>Designer Cakes for all occasions.</h2>
+    </div>
+    <img src="assets/inertia spacer.png" class="spacer">
+    <div class="textbox-left">
+        
+        <div>
+            <h3>Get the cake that suits you</h3>
+            <p>Our impeccable cakes vary in a range of flavours and types for all sorts of celebrations, varying from birthdays and weddings to other anniversary events.</p>
+        </div>
+        <img src="assets/birthday-cake1.jpeg">
+    </div>
+    <img src="assets/inertia spacer.png" class="spacer">
+    <div class="textbox-right">
+        <img src="assets/birthday-cake2.jpeg">
+        <div>
+            <h3>Made for all occasions, all ages, all sizes</h3>
+            <p>Whether you're feeding a party of toddlers or your place of work, rest assured you'll recieve exactly what you need.</p>
+        </div>
+    </div>
+    <img src="assets/inertia spacer.png" class="spacer">
+    <div class="textbox-left">
+        <div>
+            <h3>Floral decorations for all functions</h3>
+            <p>Alongside the edible parts, cakes can be optionally given flowers and otherwise inedible decoration upon request.</p>
+        </div>
+        <img src="assets/cake-collage2.jpeg">
+    </div>
+
+    <img src="assets/inertia spacer.png" class="spacer">
+
+    <div id="inquiries">
+        <div class="inquiry-formbox">
+            <h2>Inquiry form</h2>
+            <form>
+                <br><br>
+                <label for="sender-name">Name</label><br>
+                <input type="text" id="sender-name">
+                <br><br>
+                <label for="sender-email">E-mail</label><br>
+                <input type="email" id="sender-email">
+                <br><br>
+                <label for="message-contents">Message</label><br>
+                <input type="text" id="message-contents">
+                <br><br>
+                <input type="submit" id="sender-submit">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <img src="assets/logo-splash.jpeg">
+    </div>
+</body>
+
+<script>
+    let fb = document.getElementById("facebook-img");
+    let email = document.getElementById("email-img");
+
+    let fblink = document.getElementById("facebook-link");
+    let emaillink = document.getElementById("email-link");
+
+    fb.addEventListener("click", () => {
+        fblink.classList.toggle("shown-link");
+        fblink.classList.toggle("hidden-link");
+    });
+
+    email.addEventListener("click", () => {
+        emaillink.classList.toggle("shown-link");
+        emaillink.classList.toggle("hidden-link");
+    });
+</script>
+</html>
